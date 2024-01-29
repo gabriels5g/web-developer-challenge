@@ -180,10 +180,11 @@ gap: 1rem;
 
 
 export const Post = styled.div`
-  display: grid;
+  display: flex;
   background: #313131;
   gap: 2rem;
-  grid-template-columns: 1fr 21.75rem;
+
+
   padding: 1.4rem;
   border-radius: 3px;
   border: solid 1px #3b3b3b;
@@ -191,19 +192,20 @@ export const Post = styled.div`
   div {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 1.5rem;
+    padding: 0.5rem;
     p {
       font-size: 16px;
       line-height: 1.25;
       letter-spacing: normal;
-      text-align: left;
       color: #9f9f9f;
     }
 
     span {
       font-size: 14px;
       color: #9f9f9f;
-      text-align: left;
+      
     }
   }
 
@@ -219,6 +221,8 @@ export const Post = styled.div`
 `
 
 export const Feed = styled.div`
+  width: 100%;
+  max-width: 516px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
